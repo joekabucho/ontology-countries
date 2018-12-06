@@ -1,0 +1,916 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13">
+    <Prefix name="" IRI="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Abim"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AfricanCountry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bungoma"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Burundi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CAR"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#City"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DRC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Djibouti"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EastAfricanCountry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Eritrea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ethiopia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kenya"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kiambu"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kisii"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kisumu"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lwego"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Masaga"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Msigi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mukono"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nairobi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonEastAfricanCountry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Places"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Region"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rwanda"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Siaya"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Somalia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SouthSudan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#State.District.County"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sudan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tanzania"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Uganda"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#kampala"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#borders"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#containsState.district.county"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTownCalled"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCapitalOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isLocatedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#nearbyCountry"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#population"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bondo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bungoma"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kenya"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kimilili"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kisii"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kisoro"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kisumu"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kitgum"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kumi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lira"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lugazi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lwegui"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Malaba"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Masindi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Masulta"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Muhoroni"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ruiru"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Siaya"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Suneka"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Uganda"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#kaboko"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#kikuyu"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Region"/>
+        <ObjectUnionOf>
+            <Class IRI="#Country"/>
+            <Class IRI="#State.District.County"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Abim"/>
+        <Class IRI="#State.District.County"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Abim"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isLocatedIn"/>
+            <Class IRI="#Uganda"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Abim"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasTownCalled"/>
+            <NamedIndividual IRI="#Masindi"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Abim"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasTownCalled"/>
+            <NamedIndividual IRI="#Masulta"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AfricanCountry"/>
+        <Class IRI="#Country"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bungoma"/>
+        <Class IRI="#State.District.County"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bungoma"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isLocatedIn"/>
+            <Class IRI="#Kenya"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bungoma"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasTownCalled"/>
+            <NamedIndividual IRI="#Bungoma"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bungoma"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasTownCalled"/>
+            <NamedIndividual IRI="#Kimilili"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Burundi"/>
+        <Class IRI="#EastAfricanCountry"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CAR"/>
+        <Class IRI="#AfricanCountry"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#City"/>
+        <Class IRI="#Places"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Country"/>
+        <Class IRI="#Places"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DRC"/>
+        <Class IRI="#AfricanCountry"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Djibouti"/>
+        <Class IRI="#EastAfricanCountry"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EastAfricanCountry"/>
+        <Class IRI="#Country"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Eritrea"/>
+        <Class IRI="#EastAfricanCountry"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ethiopia"/>
+        <Class IRI="#EastAfricanCountry"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kenya"/>
+        <Class IRI="#EastAfricanCountry"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kenya"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#borders"/>
+            <Class IRI="#Ethiopia"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kenya"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#borders"/>
+            <Class IRI="#Somalia"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kenya"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#borders"/>
+            <Class IRI="#SouthSudan"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kenya"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#borders"/>
+            <Class IRI="#Tanzania"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kenya"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#borders"/>
+            <Class IRI="#Uganda"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kiambu"/>
+        <Class IRI="#State.District.County"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kiambu"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isLocatedIn"/>
+            <Class IRI="#Kenya"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kiambu"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasTownCalled"/>
+            <NamedIndividual IRI="#Ruiru"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kiambu"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasTownCalled"/>
+            <NamedIndividual IRI="#kikuyu"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kisii"/>
+        <Class IRI="#State.District.County"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kisii"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isLocatedIn"/>
+            <Class IRI="#Kenya"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kisii"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasTownCalled"/>
+            <NamedIndividual IRI="#Kisii"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kisii"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasTownCalled"/>
+            <NamedIndividual IRI="#Suneka"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kisumu"/>
+        <Class IRI="#State.District.County"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kisumu"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isLocatedIn"/>
+            <Class IRI="#Kenya"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kisumu"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasTownCalled"/>
+            <NamedIndividual IRI="#Kisumu"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kisumu"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasTownCalled"/>
+            <NamedIndividual IRI="#Muhoroni"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lwego"/>
+        <Class IRI="#State.District.County"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lwego"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isLocatedIn"/>
+            <Class IRI="#Uganda"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lwego"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasTownCalled"/>
+            <NamedIndividual IRI="#Kisoro"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lwego"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasTownCalled"/>
+            <NamedIndividual IRI="#Kitgum"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Masaga"/>
+        <Class IRI="#State.District.County"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Masaga"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isLocatedIn"/>
+            <Class IRI="#Uganda"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Masaga"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasTownCalled"/>
+            <NamedIndividual IRI="#Kumi"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Masaga"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasTownCalled"/>
+            <NamedIndividual IRI="#kaboko"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Msigi"/>
+        <Class IRI="#State.District.County"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Msigi"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isLocatedIn"/>
+            <Class IRI="#Uganda"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Msigi"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasTownCalled"/>
+            <NamedIndividual IRI="#Lira"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Msigi"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasTownCalled"/>
+            <NamedIndividual IRI="#Lugazi"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mukono"/>
+        <Class IRI="#State.District.County"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mukono"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isLocatedIn"/>
+            <Class IRI="#Uganda"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mukono"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasTownCalled"/>
+            <NamedIndividual IRI="#Lwegui"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mukono"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasTownCalled"/>
+            <NamedIndividual IRI="#Malaba"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nairobi"/>
+        <Class IRI="#City"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nairobi"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#isCapitalOf"/>
+            <NamedIndividual IRI="#Kenya"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nairobi"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#isLocatedIn"/>
+            <NamedIndividual IRI="#Kenya"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonEastAfricanCountry"/>
+        <Class IRI="#Country"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonEastAfricanCountry"/>
+        <ObjectComplementOf>
+            <Class IRI="#EastAfricanCountry"/>
+        </ObjectComplementOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rwanda"/>
+        <Class IRI="#EastAfricanCountry"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Siaya"/>
+        <Class IRI="#State.District.County"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Siaya"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isLocatedIn"/>
+            <Class IRI="#Kenya"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Siaya"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasTownCalled"/>
+            <NamedIndividual IRI="#Bondo"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Siaya"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasTownCalled"/>
+            <NamedIndividual IRI="#Siaya"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Somalia"/>
+        <Class IRI="#EastAfricanCountry"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SouthSudan"/>
+        <Class IRI="#EastAfricanCountry"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#State.District.County"/>
+        <Class IRI="#Places"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sudan"/>
+        <Class IRI="#EastAfricanCountry"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tanzania"/>
+        <Class IRI="#EastAfricanCountry"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Uganda"/>
+        <Class IRI="#EastAfricanCountry"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Uganda"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#borders"/>
+            <Class IRI="#DRC"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Uganda"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#borders"/>
+            <Class IRI="#Kenya"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Uganda"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#borders"/>
+            <Class IRI="#Rwanda"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Uganda"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#borders"/>
+            <Class IRI="#Tanzania"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#kampala"/>
+        <Class IRI="#City"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#kampala"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#isCapitalOf"/>
+            <NamedIndividual IRI="#Uganda"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#kampala"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#isLocatedIn"/>
+            <NamedIndividual IRI="#Uganda"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#City"/>
+        <Class IRI="#Country"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#City"/>
+        <Class IRI="#State.District.County"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Country"/>
+        <Class IRI="#State.District.County"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Siaya"/>
+        <NamedIndividual IRI="#Bondo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bungoma"/>
+        <NamedIndividual IRI="#Bungoma"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bungoma"/>
+        <NamedIndividual IRI="#Kimilili"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kisii"/>
+        <NamedIndividual IRI="#Kisii"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lwego"/>
+        <NamedIndividual IRI="#Kisoro"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kisumu"/>
+        <NamedIndividual IRI="#Kisumu"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lwego"/>
+        <NamedIndividual IRI="#Kitgum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Masaga"/>
+        <NamedIndividual IRI="#Kumi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Msigi"/>
+        <NamedIndividual IRI="#Lira"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Msigi"/>
+        <NamedIndividual IRI="#Lugazi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mukono"/>
+        <NamedIndividual IRI="#Lwegui"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mukono"/>
+        <NamedIndividual IRI="#Malaba"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Abim"/>
+        <NamedIndividual IRI="#Masindi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Abim"/>
+        <NamedIndividual IRI="#Masulta"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kisumu"/>
+        <NamedIndividual IRI="#Muhoroni"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kiambu"/>
+        <NamedIndividual IRI="#Ruiru"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Siaya"/>
+        <NamedIndividual IRI="#Siaya"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kisii"/>
+        <NamedIndividual IRI="#Suneka"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Masaga"/>
+        <NamedIndividual IRI="#kaboko"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kiambu"/>
+        <NamedIndividual IRI="#kikuyu"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#population"/>
+        <NamedIndividual IRI="#Bondo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">39224</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#population"/>
+        <NamedIndividual IRI="#Bungoma"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">81151</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#population"/>
+        <NamedIndividual IRI="#Kimilili"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">94927</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#population"/>
+        <NamedIndividual IRI="#Kisii"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">183000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#population"/>
+        <NamedIndividual IRI="#Kisoro"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">17561</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#population"/>
+        <NamedIndividual IRI="#Kisumu"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1118000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#population"/>
+        <NamedIndividual IRI="#Kitgum"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">44604</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#population"/>
+        <NamedIndividual IRI="#Kumi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">36493</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#population"/>
+        <NamedIndividual IRI="#Lira"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">99059</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#population"/>
+        <NamedIndividual IRI="#Lugazi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">39483</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#population"/>
+        <NamedIndividual IRI="#Lwegui"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">18225</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#population"/>
+        <NamedIndividual IRI="#Malaba"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5527</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#population"/>
+        <NamedIndividual IRI="#Masindi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">94672</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#population"/>
+        <NamedIndividual IRI="#Masulta"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">14762</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#population"/>
+        <NamedIndividual IRI="#Muhoroni"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">34457</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#population"/>
+        <NamedIndividual IRI="#Ruiru"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">238231</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#population"/>
+        <NamedIndividual IRI="#Siaya"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">45353</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#population"/>
+        <NamedIndividual IRI="#Suneka"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">60730</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#population"/>
+        <NamedIndividual IRI="#kaboko"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">37825</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#population"/>
+        <NamedIndividual IRI="#kikuyu"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">233231</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isCapitalOf"/>
+        <ObjectProperty IRI="#isLocatedIn"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#containsState.district.county"/>
+        <ObjectProperty IRI="#isPartOf"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isCapitalOf"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isLocatedIn"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isPartOf"/>
+    </FunctionalObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#borders"/>
+    </SymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#borders"/>
+        <Class IRI="#Country"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <Class IRI="#City"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOf"/>
+        <Class IRI="#State.District.County"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#borders"/>
+        <Class IRI="#Country"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <Class IRI="#Country"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOf"/>
+        <Class IRI="#Country"/>
+    </ObjectPropertyRange>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="#isLocatedIn"/>
+            <ObjectProperty IRI="#borders"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="#nearbyCountry"/>
+    </SubObjectPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#population"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#population"/>
+        <Class IRI="#Places"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#population"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#City</IRI>
+        <Literal>city of a country</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Country</IRI>
+        <Literal>east african country</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#State.District.County</IRI>
+        <Literal>state city or county</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+

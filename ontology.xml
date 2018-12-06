@@ -1,0 +1,863 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#"
+     xml:base="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#borders -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#borders">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Country"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#containsState.district.county -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#containsState.district.county">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#isPartOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#hasTownCalled -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#hasTownCalled"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#isCapitalOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#isCapitalOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#isLocatedIn"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#isLocatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#isLocatedIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#City"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#isPartOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#State.District.County"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#nearbyCountry -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#nearbyCountry">
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#isLocatedIn"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#borders"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#population -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#population">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Places"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Abim -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Abim">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#State.District.County"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#isLocatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Uganda"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#hasTownCalled"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Masindi"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#hasTownCalled"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Masulta"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#AfricanCountry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#AfricanCountry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Bungoma -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Bungoma">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#State.District.County"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#isLocatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Kenya"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#hasTownCalled"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Bungoma"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#hasTownCalled"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Kimilili"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Burundi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Burundi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#EastAfricanCountry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#CAR -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#CAR">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#AfricanCountry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Places"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Country"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#State.District.County"/>
+        <rdfs:comment>city of a country</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Country">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Places"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#State.District.County"/>
+        <rdfs:comment>east african country</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#DRC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#DRC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#AfricanCountry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Djibouti -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Djibouti">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#EastAfricanCountry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#EastAfricanCountry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#EastAfricanCountry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Eritrea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Eritrea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#EastAfricanCountry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Ethiopia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Ethiopia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#EastAfricanCountry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Kenya -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Kenya">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#EastAfricanCountry"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#borders"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Ethiopia"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#borders"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Somalia"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#borders"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#SouthSudan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#borders"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Tanzania"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#borders"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Uganda"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Kiambu -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Kiambu">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#State.District.County"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#isLocatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Kenya"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#hasTownCalled"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Ruiru"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#hasTownCalled"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#kikuyu"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Kisii -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Kisii">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#State.District.County"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#isLocatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Kenya"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#hasTownCalled"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Kisii"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#hasTownCalled"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Suneka"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Kisumu -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Kisumu">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#State.District.County"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#isLocatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Kenya"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#hasTownCalled"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Kisumu"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#hasTownCalled"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Muhoroni"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Lwego -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Lwego">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#State.District.County"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#isLocatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Uganda"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#hasTownCalled"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Kisoro"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#hasTownCalled"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Kitgum"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Masaga -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Masaga">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#State.District.County"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#isLocatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Uganda"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#hasTownCalled"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Kumi"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#hasTownCalled"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#kaboko"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Msigi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Msigi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#State.District.County"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#isLocatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Uganda"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#hasTownCalled"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Lira"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#hasTownCalled"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Lugazi"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Mukono -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Mukono">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#State.District.County"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#isLocatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Uganda"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#hasTownCalled"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Lwegui"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#hasTownCalled"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Malaba"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Nairobi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Nairobi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#City"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#isCapitalOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Kenya"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#isLocatedIn"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Kenya"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#NonEastAfricanCountry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#NonEastAfricanCountry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Country"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#EastAfricanCountry"/>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Places -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Places"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Region -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Region">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Country"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#State.District.County"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Rwanda -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Rwanda">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#EastAfricanCountry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Siaya -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Siaya">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#State.District.County"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#isLocatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Kenya"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#hasTownCalled"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Bondo"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#hasTownCalled"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Siaya"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Somalia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Somalia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#EastAfricanCountry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#SouthSudan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#SouthSudan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#EastAfricanCountry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#State.District.County -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#State.District.County">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Places"/>
+        <rdfs:comment>state city or county</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Sudan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Sudan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#EastAfricanCountry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Tanzania -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Tanzania">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#EastAfricanCountry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Uganda -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Uganda">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#EastAfricanCountry"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#borders"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#DRC"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#borders"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Kenya"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#borders"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Rwanda"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#borders"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Tanzania"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#kampala -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#kampala">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#City"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#isCapitalOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Uganda"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#isLocatedIn"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Uganda"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Bondo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Bondo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Siaya"/>
+        <population rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">39224</population>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Bungoma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Bungoma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Bungoma"/>
+        <population rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">81151</population>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Kenya -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Kenya"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Kimilili -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Kimilili">
+        <rdf:type rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Bungoma"/>
+        <population rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">94927</population>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Kisii -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Kisii">
+        <rdf:type rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Kisii"/>
+        <population rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">183000</population>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Kisoro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Kisoro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Lwego"/>
+        <population rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17561</population>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Kisumu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Kisumu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Kisumu"/>
+        <population rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1118000</population>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Kitgum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Kitgum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Lwego"/>
+        <population rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">44604</population>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Kumi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Kumi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Masaga"/>
+        <population rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">36493</population>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Lira -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Lira">
+        <rdf:type rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Msigi"/>
+        <population rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">99059</population>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Lugazi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Lugazi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Msigi"/>
+        <population rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">39483</population>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Lwegui -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Lwegui">
+        <rdf:type rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Mukono"/>
+        <population rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18225</population>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Malaba -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Malaba">
+        <rdf:type rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Mukono"/>
+        <population rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5527</population>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Masindi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Masindi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Abim"/>
+        <population rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">94672</population>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Masulta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Masulta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Abim"/>
+        <population rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14762</population>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Muhoroni -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Muhoroni">
+        <rdf:type rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Kisumu"/>
+        <population rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34457</population>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Ruiru -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Ruiru">
+        <rdf:type rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Kiambu"/>
+        <population rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">238231</population>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Siaya -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Siaya">
+        <rdf:type rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Siaya"/>
+        <population rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45353</population>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Suneka -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Suneka">
+        <rdf:type rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Kisii"/>
+        <population rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60730</population>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Uganda -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Uganda"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#kaboko -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#kaboko">
+        <rdf:type rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Masaga"/>
+        <population rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">37825</population>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#kikuyu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#kikuyu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/joeka/ontologies/2018/10/untitled-ontology-13#Kiambu"/>
+        <population rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">233231</population>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+
